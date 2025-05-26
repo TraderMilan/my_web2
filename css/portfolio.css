@@ -1,0 +1,693 @@
+body {
+    background: linear-gradient(to bottom, #181818, #3a3a3a);
+    color: #fafafa;
+    font-family: Roboto, monospace;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #ececec;
+}
+
+.menu, .menu-options{
+    display: none;
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgb(25, 25, 25);
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+.me {
+    margin-left: 2vw;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*-----main-----*/
+
+h1 {
+    font-size: 90px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+/*--|-----projekty-----|--*/
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 20px;
+}
+
+.pro {
+    width: 260px;
+    height: 390px;
+    border-radius: 30px;
+    display: flex;
+    padding: 30px;
+    color: white;
+    background: black;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0);
+}
+
+.pro a, .pro h3, .pro p {
+    color: white;
+    z-index: 2;
+}
+
+/*--vnutro--*/
+
+.nazov {
+    position: absolute;
+    top: 0;
+    left: 32px;
+    font-size: 30px;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.pozri {
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    z-index: 2;
+}
+
+.pozri:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.popis {
+    position: absolute;
+    bottom: 5px;
+    left: 25px;
+    list-style: none;
+    color: white;
+    z-index: 2;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+
+.technology {
+    background-color: #737373;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.tech-nadpis {
+    background: none;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 0;
+}
+
+/*--vnutro--*/
+
+.pro::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.gladiator {
+    background: url("../imgs/portfolio/gladiator.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.pokemon {
+    background: url("../imgs/portfolio/ppokemon.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.task {
+    background: url("../imgs/portfolio/task.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.hover {
+    display: none;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.pro:hover .hover {
+    display: flex;
+
+}
+
+.pro:hover::after {
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+    opacity: 0.9;
+}
+
+/*---description---*/
+
+.description {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 120px;
+
+}
+
+.desc {
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+
+}
+
+
+/*-----Devider-----*/
+
+.devide {
+    background-image: url("../imgs/portfolio/devider.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.devide h1 {
+    font-size: 55px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 45px;
+    margin: 160px 0 60px 0;
+}
+
+/*----jednotlive projekty----*/
+
+.text {
+    display: flex;
+    justify-content: normal;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.full {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.1));
+    margin-top: 120px;
+    height: 450px;
+    display: flex;
+    border-radius: 30px;
+    gap: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0);
+}
+
+
+.full h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0 10px 0;
+}
+
+.full img {
+    width: 400px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.content-body {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+
+}
+
+.content {
+    width: 45%;
+}
+
+.content a {
+    color: #007dc2;
+    text-decoration: underline;
+}
+
+
+.container:nth-of-type(odd) .full {
+    flex-direction: row-reverse;
+    padding-left: 20px;
+}
+
+.container:nth-of-type(odd) .full img {
+    border-radius: 0 30px 30px 0;
+}
+
+/*-----footer-----*/
+
+.project-title:last-of-type {
+    margin: 300px 0 200px 0;
+}
+
+footer {
+    background: rgb(25, 25, 25);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+}
+
+footer a:hover {
+    text-decoration-line: underline;
+}
+
+footer svg {
+    padding: 10px;
+    border-radius: 50%;
+    overflow: visible;
+}
+
+footer svg:hover {
+    stroke: rgb(25, 25, 25);
+    background-color: #f6f6f6;
+}
+
+footer .right-footer {
+    gap: 20px;
+}
+
+/*-----up buttom-----*/
+.up {
+    font-size: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.up a {
+    margin: 0;
+    padding: 0;
+    rotate: calc(270deg);
+}
+
+.up a:hover {
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+
+/*----click----*/
+#webside, #gladiator, #task, #pokemon {
+    scroll-margin-top: 120px;
+}
+
+#back-end, #front-end {
+    scroll-margin-top: 50px;
+}
+
+@media (max-width: 1250px) {
+
+    h1 {
+        font-size: 6.5vw;
+        margin-bottom: 20px;
+    }
+
+    .devide h1 {
+        font-size: 6vw;
+    }
+
+    h1.project-title {
+        font-size: 4.5vw;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+        margin: 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .popis {
+        display: none;
+    }
+
+    .pozri {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px;
+    }
+
+    .nazov {
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3vw;
+    }
+
+    .projects, .description {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .projects {
+        gap: 5vw;
+        align-items: flex-end;
+        margin-bottom: 30px;
+        margin-top: 80px;
+    }
+
+    .pro, .desc {
+        width: 30%;
+    }
+
+    .pro {
+        height: 30vw;
+
+    }
+
+
+    /*---full karty---*/
+
+    .full {
+        width: 90%;
+        height: 40vw;
+        margin: 20px auto;
+        font-size: 1.3vw;
+        gap: 0;
+    }
+
+    .text{
+        margin: 0 10px;
+    }
+
+    .content-body{
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .text h2{
+        margin: 1.5vw 0 1vw 0;
+        font-size: 3.5vw;
+    }
+
+    .link{
+        padding-left: 2vw;
+    }
+
+    .container:nth-of-type(odd) .full {
+        padding-left: 0;
+    }
+
+    .content ul{
+        padding-left: 2.7vw;
+    }
+
+   .project-title:last-of-type{
+       margin: 30vw 0 20vw 0;
+   }
+
+}
+
+@media (max-width: 800px) {
+    header .right, header .left{
+        display: none;
+    }
+    header{
+        justify-content: center;
+
+    }
+
+    .menu{
+        display: flex;
+        position: fixed;
+        left: 30px;
+    }
+
+    .menu:hover{
+        cursor: pointer;
+    }
+
+    .menu:hover .menu-options{
+        display: flex;
+    }
+
+    .menu-options{
+        background-color: #131313;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 12px;
+        width: 100px;
+        border: #464646 1px solid;
+
+    }
+
+    .menu-options li{
+        border-bottom:  1px solid #575757;
+        padding: 7px;
+        width: calc(100% - 14px);
+
+    }
+
+    .menu-options li:last-child{
+        border-bottom: none;
+    }
+
+    .menu-options li:hover{
+        text-decoration: underline;
+    }
+
+    .desc{
+        display: none;
+    }
+
+
+    .project-title{
+        margin:  20vw 0 10vw 0;
+    }
+
+
+
+    footer ul:not(.right-footer){
+        display: none;
+    }
+
+    footer{
+        justify-content:  flex-end;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .projects{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .pro, .desc {
+        width: 40vw;
+    }
+
+    .pro {
+        height: 60vw;
+    }
+
+
+    /*-- vnutro --*/
+
+
+    .nazov {
+        position: absolute;
+        top: 0;
+        margin: 15px 0;
+        font-size: 25px;
+
+    }
+
+    .pozri {
+        left: 70%;
+        font-size: 12px;
+        width: 70px;
+        padding: 5px 7px;
+
+    }
+
+
+    .popis {
+        display: flex;
+    }
+
+
+    .technology {
+        font-size: 12px;
+    }
+
+    .tech-nadpis {
+        font-size: 16px;
+    }
+
+
+    /*---full---*/
+
+    .full{
+        height: auto;
+        flex-direction: column;
+        width: 60%;
+        min-width: 220px;
+        gap: 3vw;
+        font-size: 2.2vw;
+    }
+
+    .text h2{
+        font-size: 4.4vw;
+
+    }
+
+    .full h3{
+        font-size: 3.2vw;
+    }
+
+    .full img, .container:nth-of-type(odd) .full img{
+        width: 100%;
+
+        border-radius: 5vw 5vw 0 0 ;
+
+    }
+
+
+    .container:nth-of-type(odd) .full {
+        display:  flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+   .content-body{
+       flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+       gap: 0px;
+
+   }
+
+   .link{
+       padding: 0;
+   }
+
+   .content {
+        width: auto;
+       margin: 2vw;
+   }
+
+
+   .up{
+       font-size: 25vw;
+   }
+
+   footer{
+       justify-content: center;
+   }
+
+   .devide{
+       height: 110px;
+   }
+
+
+
+}
+
+@media (max-width: 400px) {
+
+
+    .popis {
+        display: none;
+    }
+
+    .pozri {
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .menu{
+        left: 10px;
+    }
+
+    .me{
+        font-size: 18px;
+    }
+
+
+}
