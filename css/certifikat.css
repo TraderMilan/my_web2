@@ -3,9 +3,9 @@ img {
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
 }
 
-img:hover {
+img:hover, img:focus {
     position: fixed;
-    width: 550px;
+    width: 520px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -170,6 +170,10 @@ footer svg:hover {
         width: 90%;
         padding: 0;
         margin: 25px auto;
+    }
+
+    img:hover{
+        width: 70%;
     }
 }
 

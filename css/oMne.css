@@ -165,11 +165,7 @@ main {
 
 .open:hover {
     transition: all 0.3s ease;
-    background-color: rgb(19, 19, 19);
-    color: white;
-    padding: 0px 4px 0px 6px;
-    border-radius: 50%;
-    overflow: visible;
+    font-size: 5vw;
 }
 
 /*-----articles-----*/
@@ -241,19 +237,15 @@ footer svg:hover {
 @media (max-width: 850px) {
     .container {
         width: 90%;
-        font-size: 1.8vw;
+        font-size: 2vw;
 
     }
 
-    .container h2{
-        font-size: 3.8vw;
-    }
-    .container h3{
-        font-size: 2.8vw;
-    }
+
 
     nav ul {
-        font-size: 1.9vw;
+        font-size: clamp(10px, 1.9vw, 30px);
+
         gap: 7vw;
         justify-content: space-between;
         padding-left: 15px;
@@ -266,8 +258,15 @@ footer svg:hover {
         padding: 0 8vw;
     }
 
+    header img {
+        border: 2vw solid #ececec;
+        border-bottom: none;
+    }
+
+
     .left h1{
         font-size: 4.8vw;
+
     }
 
     .left h4{
@@ -277,6 +276,8 @@ footer svg:hover {
     .left a{
         font-size: 2vw;
         padding: 1.2vw 2.5vw;
+        border-radius: 1vw;
+        box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.5);
     }
 
     header img {
@@ -287,10 +288,36 @@ footer svg:hover {
         padding: 20px 8vw;
     }
 
-    .project{
-        width: 25%;
-        padding: 0 2vw 1.5vw 2vw;
+
+
+    .container h2{
+        font-size: 3.8vw;
     }
+    .container h3{
+        font-size: 3.5vw;
+    }
+
+    .projects{
+        flex-direction: column;
+        align-items: center;
+        gap: 4vw;
+    }
+
+
+    .project{
+        width: 45%;
+        min-width: 100px;
+        padding: 0 3vw 2vw 3vw;
+    }
+
+
+
+
+
+
+
+
+
 
     .languages{
         display: flex;
@@ -300,7 +327,7 @@ footer svg:hover {
     }
 
     .lang{
-        font-size: 1.8vw;
+        font-size: 2vw;
         padding: 0.6vw 1vw;
         border-radius: 1vw;
     }
@@ -314,8 +341,12 @@ footer svg:hover {
 
     /*---article---*/
     article{
-        padding: 2vw;
+        padding: 2vw 3vw;
         border-radius: 2vw;
+    }
+
+    article p{
+        margin-right: 6vw;
     }
 
     article.first{
@@ -333,7 +364,12 @@ footer svg:hover {
 
     footer{
         justify-content: space-between;
-        padding: 15px;
+        padding: 3vw;
+    }
+
+    footer a svg{
+        width: 6vw;
+        height: 6vw;
     }
 
 

@@ -375,7 +375,7 @@ footer .right-footer {
 @media (max-width: 1250px) {
 
     h1 {
-        font-size: 6.5vw;
+        font-size: clamp(32px, 7.5vw, 70px);
         margin-bottom: 20px;
     }
 
@@ -388,12 +388,12 @@ footer .right-footer {
     }
 
     h2 {
-        font-size: 2.5vw;
+        font-size: clamp(12px, 2.7vw, 26px);
         margin: 0;
     }
 
     .container {
-        width: 100%;
+        width: 95%;
     }
 
     .popis {
@@ -438,7 +438,7 @@ footer .right-footer {
 
     .full {
         width: 90%;
-        height: 40vw;
+        height: 42vw;
         margin: 20px auto;
         font-size: 1.3vw;
         gap: 0;
@@ -495,27 +495,33 @@ footer .right-footer {
         cursor: pointer;
     }
 
+
+
     .menu:hover .menu-options{
         display: flex;
     }
 
     .menu-options{
-        background-color: #131313;
+        background: rgb(25, 25, 25);
         flex-direction: column;
-        justify-content: left;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         gap: 0;
-        position: absolute;
-        top: 12px;
-        width: 100px;
-        border: #464646 1px solid;
+        position: fixed;
+        top: 32px;
+        width: 100%;
+        margin-left: -30px;
+        padding-top: 10px;
+
 
     }
 
     .menu-options li{
         border-bottom:  1px solid #575757;
-        padding: 7px;
+        padding: 10px 7px;
         width: calc(100% - 14px);
+        text-align: center;
+        font-size: 16px;
 
     }
 
@@ -607,7 +613,8 @@ footer .right-footer {
         width: 60%;
         min-width: 220px;
         gap: 3vw;
-        font-size: 2.2vw;
+        font-size: 2.4vw;
+        border-radius: 4vw;
     }
 
     .text h2{
@@ -622,7 +629,7 @@ footer .right-footer {
     .full img, .container:nth-of-type(odd) .full img{
         width: 100%;
 
-        border-radius: 5vw 5vw 0 0 ;
+        border-radius: 4vw 4vw 0 0 ;
 
     }
 
@@ -649,6 +656,7 @@ footer .right-footer {
    .content {
         width: auto;
        margin: 2vw;
+       line-height: 2.8vw;
    }
 
 
@@ -678,11 +686,19 @@ footer .right-footer {
     .pozri {
         left: 50%;
         transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:  75px;
 
     }
 
     .menu{
         left: 10px;
+    }
+
+    .menu-options{
+        margin-left: -10px;
     }
 
     .me{
